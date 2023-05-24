@@ -1,0 +1,99 @@
+token: {{token | env_var('TOKEN')}}
+webhook:
+  base_url: {{webhook.base_url | env_var('WEBHOOK_BASE_URL')}}
+  drop_pending: {{webhook.drop_pending | env_var('WEBHOOK_DROP_PENDING')}}
+  secret_token: {{webhook.secret_token | env_var('WEBHOOK_SECRET_TOKEN')}}
+redis:
+  host: {{redis.host | env_var('REDIS_HOST')}}
+  password: {{redis.password | env_var('REDIS_PASSWORD')}}
+  port: {{redis.port | env_var('REDIS_PORT')}}
+projects:
+  api_key: {{projects.api_key | env_var('PROJECTS_API_KEY')}}
+  api_url: {{projects.api_url | env_var('PROJECTS_API_URL')}}
+loggers:
+  loglevel: {{loggers.loglevel | env_var('LOGGERS_LOGLEVEL')}}
+  bot_logger:
+    loglevel: {{loggers.bot_logger.loglevel | env_var('BOT_LOGGER_LOGLEVEL')}}
+    logstream: {{loggers.bot_logger.logstream | env_var('BOT_LOGGER_LOGSTREAM')}}
+    logfile: {{loggers.bot_logger.logfile | env_var('BOT_LOGGER_LOGFILE')}}
+messages:
+  unknown:
+    en: {{messages.unknown.en | env_var('MESSAGES_UNKNOWN_EN')}}
+    ru: {{messages.unknown.ru | env_var('MESSAGES_UNKNOWN_RU')}}
+  message_timeout:
+    en: {{messages.message_timeout.en | env_var('MESSAGES_MESSAGE_TIMEOUT_EN')}}
+    ru: {{messages.message_timeout.ru | env_var('MESSAGES_MESSAGE_TIMEOUT_RU')}}
+  callback_timeout:
+    en: {{messages.callback_timeout.en | env_var('MESSAGES_CALLBACK_TIMEOUT_EN')}}
+    ru: {{messages.callback_timeout.ru | env_var('MESSAGES_CALLBACK_TIMEOUT_RU')}}
+  choose_language:
+    en: {{messages.choose_language.en | env_var('MESSAGES_CHOOSE_LANGUAGE_EN')}}
+    ru: {{messages.choose_language.ru | env_var('MESSAGES_CHOOSE_LANGUAGE_RU')}}
+  register_or_login:
+    en: {{messages.register_or_login.en | env_var('MESSAGES_REGISTER_OR_LOGIN_EN')}}
+    ru: {{messages.register_or_login.ru | env_var('MESSAGES_REGISTER_OR_LOGIN_RU')}}
+  canceled:
+    en: {{messages.canceled.en | env_var('MESSAGES_CANCELED_EN')}}
+    ru: {{messages.canceled.ru | env_var('MESSAGES_CANCELED_RU')}}
+  new_login:
+    en: {{messages.new_login.en | env_var('MESSAGES_NEW_LOGIN_EN')}}
+    ru: {{messages.new_login.ru | env_var('MESSAGES_NEW_LOGIN_RU')}}
+  invalid_login:
+    en: {{messages.invalid_login.en | env_var('MESSAGES_INVALID_LOGIN_EN')}}
+    ru: {{messages.invalid_login.ru | env_var('MESSAGES_INVALID_LOGIN_RU')}}
+  login_taken:
+    en: {{messages.login_taken.en | env_var('MESSAGES_LOGIN_TAKEN_EN')}}
+    ru: {{messages.login_taken.ru | env_var('MESSAGES_LOGIN_TAKEN_RU')}}
+  new_password:
+    en: {{messages.new_password.en | env_var('MESSAGES_NEW_PASSWORD_EN')}}
+    ru: {{messages.new_password.ru | env_var('MESSAGES_NEW_PASSWORD_RU')}}
+  invalid_password:
+    en: {{messages.invalid_password.en | env_var('MESSAGES_INVALID_PASSWORD_EN')}}
+    ru: {{messages.invalid_password.ru | env_var('MESSAGES_INVALID_PASSWORD_RU')}}
+  password_too_weak:
+    en: {{messages.password_too_weak.en | env_var('MESSAGES_PASSWORD_TOO_WEAK_EN')}}
+    ru: {{messages.password_too_weak.ru | env_var('MESSAGES_PASSWORD_TOO_WEAK_RU')}}
+  repeat_password:
+    en: {{messages.repeat_password.en | env_var('MESSAGES_REPEAT_PASSWORD_EN')}}
+    ru: {{messages.repeat_password.ru | env_var('MESSAGES_REPEAT_PASSWORD_RU')}}
+  passwords_dont_match:
+    en: {{messages.passwords_dont_match.en | env_var('MESSAGES_PASSWORDS_DONT_MATCH_EN')}}
+    ru: {{messages.passwords_dont_match.ru | env_var('MESSAGES_PASSWORDS_DONT_MATCH_RU')}}
+  registration_failed:
+    en: {{messages.registration_failed.en | env_var('MESSAGES_REGISTRATION_FAILED_EN')}}
+    ru: {{messages.registration_failed.ru | env_var('MESSAGES_REGISTRATION_FAILED_RU')}}
+  get_login:
+    en: {{messages.get_login.en | env_var('MESSAGES_GET_LOGIN_EN')}}
+    ru: {{messages.get_login.ru | env_var('MESSAGES_GET_LOGIN_RU')}}
+  get_password:
+    en: {{messages.get_password.en | env_var('MESSAGES_GET_PASSWORD_EN')}}
+    ru: {{messages.get_password.ru | env_var('MESSAGES_GET_PASSWORD_RU')}}
+  login_failed:
+    en: {{messages.login_failed.en | env_var('MESSAGES_LOGIN_FAILED_EN')}}
+    ru: {{messages.login_failed.ru | env_var('MESSAGES_LOGIN_FAILED_RU')}}
+  logged_in:
+    en: {{messages.logged_in.en | env_var('MESSAGES_LOGGED_IN_EN')}}
+    ru: {{messages.logged_in.ru | env_var('MESSAGES_LOGGED_IN_RU')}}
+buttons:
+  register:
+    en: {{buttons.register.en | env_var('BUTTONS_REGISTER_EN')}}
+    ru: {{buttons.register.ru | env_var('BUTTONS_REGISTER_RU')}}
+  login:
+    en: {{buttons.login.en | env_var('BUTTONS_LOGIN_EN')}}
+    ru: {{buttons.login.ru | env_var('BUTTONS_LOGIN_RU')}}
+  cancel:
+    en: {{buttons.cancel.en | env_var('BUTTONS_CANCEL_EN')}}
+    ru: {{buttons.cancel.ru | env_var('BUTTONS_CANCEL_RU')}}
+  reset_login:
+    en: {{buttons.reset_login.en | env_var('BUTTONS_RESET_LOGIN_EN')}}
+    ru: {{buttons.reset_login.ru | env_var('BUTTONS_RESET_LOGIN_RU')}}
+  reset_password:
+    en: {{buttons.reset_password.en | env_var('BUTTONS_RESET_PASSWORD_EN')}}
+    ru: {{buttons.reset_password.ru | env_var('BUTTONS_RESET_PASSWORD_RU')}}
+  reset_login_password:
+    en: {{buttons.reset_login_password.en | env_var('BUTTONS_RESET_LOGIN_PASSWORD_EN')}}
+    ru: {{buttons.reset_login_password.ru | env_var('BUTTONS_RESET_LOGIN_PASSWORD_RU')}}
+  logout:
+    en: {{buttons.logout.en | env_var('BUTTONS_LOGOUT_EN')}}
+    ru: {{buttons.logout.ru | env_var('BUTTONS_LOGOUT_RU')}}
+telegram_api_url: {{telegram_api_url | env_var('TELEGRAM_API_URL')}}

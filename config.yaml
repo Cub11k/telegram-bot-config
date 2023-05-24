@@ -1,0 +1,99 @@
+token: token
+webhook:
+  base_url: webhook url
+  drop_pending: True
+  secret_token: secret token
+redis:
+  host: 127.0.0.1
+  password: qwerty123
+  port: 6379
+projects:
+  api_key: str
+  api_url: str
+loggers:
+  loglevel: INFO
+  bot_logger:
+    loglevel: INFO
+    logstream: True
+    logfile: bot.log
+messages:
+  unknown:
+    en: Unknown error
+    ru: Неизвестная ошибка
+  message_timeout:
+    en: You are sending too many messages
+    ru: Вы отправляете слишком много сообщений
+  callback_timeout:
+    en: You are sending too many queries
+    ru: Вы отправляете слишком много запросов
+  choose_language:
+    en: Choose language
+    ru: Выберите язык
+  register_or_login:
+    en: Register or login
+    ru: Зарегистрироваться или войти
+  canceled:
+    en: Cancelled
+    ru: Отменено
+  new_login:
+    en: New login
+    ru: Новый логин
+  invalid_login:
+    en: Invalid login
+    ru: Неверный логин
+  login_taken:
+    en: Login already taken
+    ru: Логин уже занят
+  new_password:
+    en: New password
+    ru: Новый пароль
+  invalid_password:
+    en: Invalid password
+    ru: Неверный пароль
+  password_too_weak:
+    en: Password too weak
+    ru: Пароль слишком слабый
+  repeat_password:
+    en: Repeat password
+    ru: Повторите пароль
+  passwords_dont_match:
+    en: Passwords don't match
+    ru: Пароли не совпадают
+  registration_failed:
+    en: Registration failed
+    ru: Регистрация не удалась
+  get_login:
+    en: Login
+    ru: Логин
+  get_password:
+    en: Password
+    ru: Пароль
+  login_failed:
+    en: Login failed
+    ru: Вход не удался
+  logged_in:
+    en: Logged in
+    ru: Вход выполнен
+buttons:
+  register:
+    en: Register
+    ru: Зарегистрироваться
+  login:
+    en: Login
+    ru: Войти
+  cancel:
+    en: Cancel
+    ru: Отмена
+  reset_login:
+    en: Reset login
+    ru: Сбросить логин
+  reset_password:
+    en: Reset password
+    ru: Сбросить пароль
+  reset_login_password:
+    en: Reset login and password
+    ru: Сбросить логин и пароль
+  logout:
+    en: Logout
+    ru: Выйти
+telegram_api_url: None
